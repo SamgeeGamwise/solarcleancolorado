@@ -1,0 +1,76 @@
+@import '../../styles/variables';
+.grid-container {
+    .about-us {
+        text-align: center;
+        margin: 0px 10% 60px 10%;
+
+        .gallery {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+
+            > :nth-child(2) {
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+
+            > :nth-child(1)  {
+                margin-bottom: 50px;
+            } 
+            > :nth-child(3) {
+                margin-top: 50px;
+            }
+        }
+
+        #imageCarousel {
+            width: 100%;
+            max-width: 325;
+            max-height: 100%;
+            
+            margin-top: 5em;
+            margin-bottom: 5em;
+
+            .carousel-item {
+                width: 100%;
+                max-width: 325;
+                max-height: 100%;       
+            }
+        }
+
+        .sustainable, .licensed-insured {
+            margin-left: 10%;
+            margin-right: 10%;
+
+            @media (max-width: 768px) {
+                margin-left: 10%;
+                margin-right: 10%;            
+            }
+        }
+
+        .sustainable {
+            margin-top: 5em;
+        }
+
+        .gallery {
+            margin-top: 5em;
+            margin-bottom: 5em;
+        }            
+        
+        @media (max-width: 768px) {
+            .sustainable {
+                margin-top: 5em;
+            }
+    
+            .gallery {
+                margin-top: 5em;
+                margin-bottom: 5em;
+            }                  
+        }
+
+        @media (max-width: 576px) {
+            margin: 30px 2% 50px 2%;      
+        }
+    }
+}
+

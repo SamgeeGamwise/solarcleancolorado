@@ -1,0 +1,44 @@
+@import '../../../../styles/variables';
+
+nav {
+
+    min-width: 366px;
+    
+    .logo {
+        width: 325px;
+        height: 100px;   
+        background-image: url("/SolarCleanColorado.svg");
+        background-size: 450px 175px;
+        background-position: -60px -40px;
+    
+        @media (max-width: 576px) { 
+            width: 275px;
+            height: 80px;   
+            background-image: url("/SolarCleanColorado.svg");
+            background-size: 375px 125px;
+            background-position: -60px -20px;
+        }
+    }
+    
+    .navbar-nav .dropdown-item,
+    .navbar-nav .nav-link {
+        font-weight: 600;
+        color: $black;
+        &:hover {
+            color: $info;
+        }
+    }
+
+    .dropdown-item {
+        &:active {
+            background-color: inherit;
+        }
+    }
+
+    .dropdown-menu {
+        border: none;
+    }
+}
+
+
+
